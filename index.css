@@ -1,0 +1,110 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #fffdf7;
+    font-family: 'Roboto', sans-serif;
+    color: #161a1d;
+}
+
+/* typography */
+
+.posts-section h3{
+    text-transform: uppercase;
+}
+
+.posts-section p {
+    line-height: 1.5;
+}
+
+/* layout */
+
+.flex-container {
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 0.5rem 2rem;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #1c2541;
+    color: #fffdf7;
+}
+
+header .container {
+    justify-content: space-between;
+}
+
+.header-name, ul {
+    gap: 1em
+}
+
+li {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+/* links and buttons*/
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+button {
+    margin-top: 2em;
+    background: #1c2541;
+    color: #fffdf7;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+}
+
+a:hover, a:active, button:hover, button:active {
+    color: #ff6b35;
+}
+
+/* form */
+
+form {
+    margin-top: 100px;
+    background: #f0f0ff;
+    color: #161a1d;
+    display: flex;
+    flex-direction: column;
+    padding: 1em 1em 2em 1em;
+    border-radius: 5px;
+}
+
+input, button, textarea {
+    width: 100%;
+    padding: 1em;
+    border-radius: 5px;
+    border: 1px solid #161a1d;
+}
+
+label {
+    margin-top: 1em;
+    margin-bottom: 0.2em;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+textarea {
+    resize: none;
+    height: 10em;
+}
